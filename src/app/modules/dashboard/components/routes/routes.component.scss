@@ -1,0 +1,49 @@
+:host {
+  height: 55vh;
+  padding: 24px;
+  display: block;
+  overflow-y: hidden;
+}
+
+.table-container {
+  overflow-y: auto;
+  height: calc(55vh - 126px);
+
+  .routes-table {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .no-data-cell {
+    padding: 24px;
+    text-align: center;
+  }
+
+  .mat-row {
+    cursor: pointer;
+  }
+
+  .route-row:hover:not(.row-selected) {
+    background-color: whitesmoke;
+  }
+
+  .details-row {
+    height: 0;
+  }
+
+  .details-container {
+    overflow: hidden;
+    display: flex;
+    background: #efefef;
+    flex-direction: column;
+  }
+
+  .row-selected {
+    font-weight: bold;
+    background: #efefef;
+  }
+
+  .details-cell {
+    padding: 0;
+  }
+}
